@@ -1,0 +1,30 @@
+.product-name {
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Limit the number of lines to 2 */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis; /* Add ellipsis for overflow text */
+    height: 3em; /* Set a fixed height for the container */
+    line-height: 1.5em; /* Adjust line height to vertically center the ellipsis */
+}
+
+.product-name:hover {
+    /* Add any additional hover styles here */
+}
+.tab-pane {
+    max-height: 200px; /* Set maximum height for the tab content */
+    overflow-y: auto; /* Add vertical scrollbar if content exceeds the height */
+}
+
+.tab-pane p {
+    margin-bottom: 10px; /* Add spacing between paragraphs */
+}
+
+.tab-pane.overflow-hidden {
+    max-height: none; /* Remove maximum height for the active tab to show full content */
+    overflow-y: visible; /* Allow overflow for the active tab */
+}
+
+.tab-pane.overflow-hidden p:last-child {
+    margin-bottom: 0; /* Remove margin for the last paragraph to avoid unnecessary space */
+}
